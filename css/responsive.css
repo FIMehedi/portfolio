@@ -1,0 +1,281 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+
+
+@media(max-width:600px) {
+	nav .logo { padding-top: 8px }
+	nav .menu-toggle { display: inline-block }
+	nav .menu { display: none; clear: both }
+	nav .menu > ul { float: none }
+	nav .menu li { width: 100%; border: 0 }
+	nav .menu li:last-child { margin: 0 0 15px 0 }
+	nav .menu li a,
+	nav .open-submenu {
+		display: block;
+		background: #62b38d;
+		padding: 10px;
+		margin: 2px 0 0 0
+	}
+	nav .menu ul ul {
+		position: static;
+		background: transparent;
+		display:none
+	}
+	nav .menu ul ul a { background: transparent }
+	nav .menu ul ul a:hover { background: #FFBB22 }
+}
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .wrapper{
+        width: 90%;
+    }
+    .help p{
+        background:#FFF8D0;
+        width: 100%;
+        padding:2px 0;
+    }
+    .top_contents{
+        margin-top:30px;
+        width: 100%;
+        height:440px;
+    }
+    .top_right_contents{
+        width: 49%;
+        height: 100%;
+        float:left;
+        border-right:2px solid #ddd;
+        margin:0 auto;
+    }
+    .top_aside_contents{
+        width:50%;
+        float:right;
+    }
+    .email_us{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bottom_nav{
+        width:100%;
+        margin-top: 70px; 
+    }
+    .bottom_nav ul li{
+        width:49%;
+    }
+    .bottom_contents{
+        width:100%;
+    }
+    .bottom_content{
+        width:100%;
+    }
+    .bottom_content img{
+        width:10%;
+    }
+    .about{
+        width:80%;
+        padding:20px 0 20px 0;
+    }
+    .bottom_content blockquote{
+        width:70%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {	
+	
+    .wrapper{
+        width: 98%;
+    }
+    .topBar{
+        width: 100%;
+    }
+    .help p{
+        background:#FFF8D0;
+        width: 100%;
+        padding:2px 0;
+    }
+    .top_contents{
+        margin-top:30px;
+        width: 100%;
+        height:440px;
+    }
+    .top_right_contents{
+        width: 100%;
+        height: 100%;
+        border-bottom:2px solid #ddd;
+        border-right: 0;
+        margin:0 auto;
+    }
+    .top_aside_contents{
+        margin-top: 20px;
+        background: white;
+        width:100%;
+    }
+    .email_us{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bottom_nav{
+        width:100%;
+        margin-top: 70px; 
+    }
+    .bottom_nav ul li{
+        width:49%;
+    }
+    .bottom_contents{
+        width:100%;
+        background:#F6F6F2;
+        padding-top:60px;
+    }
+    .bottom_content{
+        padding:20px 0;
+        width:100%;
+    }
+    .bottom_content img{
+        width:20%;
+        border-radius:50%;
+        padding: 10px;
+    }
+    .about{
+        width:95%;
+        padding:0px 10px 20px 10px;
+    }
+    .bottom_content h4{
+        padding:5px 0;
+    }
+    .bottom_content blockquote{
+        width: 80%;
+
+    }
+	
+	
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .wrapper{
+        width: 98%;
+    }
+    .topBar{
+        width: 100%;
+    }
+    .help p{
+        background:#FFF8D0;
+        width: 100%;
+        padding:2px 0;
+    }
+    .top_contents{
+        margin-top:30px;
+        width: 100%;
+        height:440px;
+    }
+    .top_right_contents{
+        width: 100%;
+        height: 100%;
+        border-bottom:2px solid #ddd;
+        border-right: 0;
+        margin:0 auto;
+    }
+    .top_aside_contents{
+        margin-top: 20px;
+        background: white;
+        width:100%;
+    }
+    .email_us{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bottom_nav{
+        width:100%;
+        margin-top: 70px; 
+    }
+    .bottom_nav ul li{
+        width:49%;
+    }
+    .bottom_contents{
+        width:100%;
+    }
+    .bottom_content{
+        width:100%;
+        padding: 20px 0;
+    }
+    .bottom_content img{
+        width:10%;
+        padding: 20px 10px;
+    }
+    .about{
+        width:85%;
+        padding:20px 0 20px 0;
+    }
+    .bottom_content blockquote{
+        width:70%;
+    }
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+
+	
+	
+	
+	
+	
+}
